@@ -1,149 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0/css/tempusdominus-bootstrap-4.min.css"
-    />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0/css/tempusdominus-bootstrap-4.min.css"
+  />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <div class="head">
-        <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-sm-12 col-md-7 col-lg-6">
-                    <nav>
-                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
-                                aria-selected="true">My Tasks</a>
-                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
-                                aria-selected="false">In Progress</a>
-                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
-                                aria-selected="false">Completed</a>
-                        </div>
-                    </nav>
-                </div>
+  <div class="head">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-sm-12 col-md-7 col-lg-6">
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+                aria-selected="true">My Tasks</a>
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
+                aria-selected="false">In Progress</a>
+              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
+                aria-selected="false">Completed</a>
             </div>
+          </nav>
         </div>
+      </div>
     </div>
-    <div class="todolist">
-        <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-sm-12 col-md-7 col-lg-6">
-                    <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                            <div class="add-list">
-                                <input type="text" class="form-control " aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="+ Add Task" >
-                            </div>
-                            <div id="accordion">
-                                <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <i class="fas fa-ellipsis-v"></i>
-                                            </div>
-                                            <div class="input-group-prepend">
-                                                <div class="input-group-text">
-                                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                                </div>
-                                            </div>
-                                            <input type="text" class="form-control" aria-label="Text input with checkbox">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-outline-secondary" type="button">
-                                                    <i class="far fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </button>
-                                            </div>
-                                            <div class="input-group-append">
-                                                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                                    aria-controls="collapseOne">
-                                                    <i class="fas fa-pencil-alt"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <div class="form-group">
-                                                <label for="comment">Comment:</label>
-                                                <div class="form-row">
-                                                    <div class="col">
-                                                        <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
-                                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
-                                                            <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
-                                                                <div class="input-group-text">
-                                                                    <i class="fa fa-calendar"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
-                                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" />
-                                                            <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
-                                                                <div class="input-group-text">
-                                                                    <i class="fa fa-clock-o"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleFormControlFile1">Example file input</label>
-                                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="comment">Comment:</label>
-                                                <textarea class="form-control" rows="5" id="comment"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <a href="#" class=""><i class="fas fa-times"></i> Cancer</a>
-                                            <a href="#" class=""><i class="fas fa-plus"></i> Save</a>
-                                        </div>
-                                    </div>
-                                </div>
-        
-                            </div>
-        
+  </div>
+  <div class="todolist">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-sm-12 col-md-7 col-lg-6">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="add-list">
+                <input type="text" class="form-control " aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="+ Add Task">
+              </div>
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="heading1">
+                    <div class="input-group">
+                      <div class="input-group-prepend move-icon">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </div>
+                      <div class="input-group-prepend">
+                        <div class="input-group-text checkbox-item">
+                          <input type="checkbox" aria-label="Checkbox for following text input" id="Checkbox-1" class="checkbox">
+                          <label class="checkbox-style" for="Checkbox-1"></label>
                         </div>
-                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+                      </div>
+                      <input type="text" class="form-control input-with-checkbox" aria-label="Text input with checkbox">
+                      <div class="input-group-append star-icon">
+                        <button class="btn btn-outline-secondary" type="button">
+                          <i class="far fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </button>
+                      </div>
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true"
+                          aria-controls="collapse1">
+                          <i class="fas fa-pencil-alt"></i>
+                        </button>
+                      </div>
                     </div>
+                  </div>
+                  <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="form-group">
+                        <label class="sub-title"><i class="far fa-calendar-alt"></i> Deadline</label>
+                        <div class="form-row">
+                          <div class="col">
+                            <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
+                              <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                <div class="input-group-text">
+                                  <i class="fas fa-calendar-alt"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" />
+                              <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                                <div class="input-group-text">
+                                  <i class="far fa-clock"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="sub-title"><i class="far fa-file"></i> File </label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
+                      <div class="form-group">
+                        <label class="sub-title"><i class="far fa-comment-dots"></i> Comment</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                      </div>
+                    </div>
+                    <div class="btn-save">
+                      <a href="#" class="">
+                        <i class="fas fa-times"></i> Cancer</a>
+                      <a href="#" class="">
+                        <i class="fas fa-plus"></i> Save</a>
+                    </div>
+                  </div>
                 </div>
+                <div class="card">
+                  <div class="card-header" id="heading2">
+                    <div class="input-group">
+                      <div class="input-group-prepend move-icon">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </div>
+                      <div class="input-group-prepend">
+                        <div class="input-group-text checkbox-item">
+                          <input type="checkbox" aria-label="Checkbox for following text input" id="Checkbox-2" class="checkbox">
+                          <label class="checkbox-style" for="Checkbox-2"></label>
+                        </div>
+                      </div>
+                      <input type="text" class="form-control input-with-checkbox" aria-label="Text input with checkbox">
+                      <div class="input-group-append star-icon">
+                        <button class="btn btn-outline-secondary" type="button">
+                          <i class="far fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </button>
+                      </div>
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true"
+                          aria-controls="collapse2">
+                          <i class="fas fa-pencil-alt"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="form-group">
+                        <label class="sub-title">
+                          <i class="far fa-calendar-alt"></i> Deadline</label>
+                        <div class="form-row">
+                          <div class="col">
+                            <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
+                              <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                <div class="input-group-text">
+                                  <i class="fas fa-calendar-alt"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" />
+                              <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                                <div class="input-group-text">
+                                  <i class="far fa-clock"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="sub-title">
+                          <i class="far fa-file"></i> File </label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
+                      <div class="form-group">
+                        <label class="sub-title">
+                          <i class="far fa-comment-dots"></i> Comment</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                      </div>
+                    </div>
+                    <div class="btn-save">
+                      <a href="#" class="">
+                        <i class="fas fa-times"></i> Cancer</a>
+                      <a href="#" class="">
+                        <i class="fas fa-plus"></i> Save</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
             </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0/js/tempusdominus-bootstrap-4.min.js"></script>
+
+  <script type="text/javascript">
+  (function ($) {
+    $('#datetimepicker3').datetimepicker({
+      format: 'LT'
+    });
+    $('#datetimepicker4').datetimepicker({
+      format: 'L'
+    });
+
+    
+    $(".checkbox").change(function (){
+      var inputWithCheckbox = $(this).parent().parent().next('.input-with-checkbox');
+      if (this.checked) {
+        inputWithCheckbox.addClass('text-line');
+      }else {
+        inputWithCheckbox.removeClass('text-line');
+      }
+    })
     
 
 
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <script type="text/javascript">
-        $(function () {
-            $('#datetimepicker3').datetimepicker({
-                format: 'LT'
-            });
-            $('#datetimepicker4').datetimepicker({
-                format: 'L'
-            });
-        });
-    </script>
+  })(jQuery)
+    
+  </script>
 </body>
+
 </html>
